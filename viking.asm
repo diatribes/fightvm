@@ -1,0 +1,22 @@
+MOVE I0, C0
+STORE I1, 80
+CMP
+JMPGT 0
+
+STORE I1, 60
+CMP
+JMPGT 3
+
+JMP 1
+
+LABEL 0
+    STORE R0, 2
+    RET
+
+LABEL 1
+    STORE R0, 1
+    RET
+
+LABEL 3
+    STORE R0, 0
+    RET
